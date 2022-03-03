@@ -1,0 +1,152 @@
+{
+  "heading": "Our Awesome Team",
+  "text": "We have created a new product that will help designers, developers and companies create websites for their startups quickly and easily.",
+  "btn": "View more team",
+  "btnIcon": "fa-solid fa-hand-point-right",
+  "boxes": [
+    {
+      "img": "assets/img/team-person-img-1.png",
+      "name": "Vanessa Laird",
+      "career": "UI Designeer",
+      "socials": [
+        {
+          "icon": "fa-brands fa-twitter"
+        },
+        {
+          "icon": "fa-brands fa-facebook"
+        },
+        {
+          "icon": "fa-brands fa-dribbble"
+        }
+      ]
+    },
+    {
+      "img": "assets/img/team-person-img-2.png",
+      "name": "Vanessa Laird",
+      "career": "UI Designeer",
+      "socials": [
+        {
+          "icon": "fa-brands fa-twitter"
+        },
+        {
+          "icon": "fa-brands fa-facebook"
+        },
+        {
+          "icon": "fa-brands fa-dribbble"
+        }
+      ]
+    },
+    {
+      "img": "assets/img/team-person-img-3.png",
+      "name": "Vanessa Laird",
+      "career": "UI Designeer",
+      "socials": [
+        {
+          "icon": "fa-brands fa-twitter"
+        },
+        {
+          "icon": "fa-brands fa-facebook"
+        },
+        {
+          "icon": "fa-brands fa-dribbble"
+        }
+      ]
+    },
+    {
+      "img": "assets/img/team-person-img-4.png",
+      "name": "Samantha Gimson",
+      "career": "Front-End Developer",
+      "socials": [
+        {
+          "icon": "fa-brands fa-twitter"
+        },
+        {
+          "icon": "fa-brands fa-facebook"
+        },
+        {
+          "icon": "fa-brands fa-dribbble"
+        }
+      ]
+    },
+    {
+      "img": "assets/img/team-person-img-5.png",
+      "name": "Evan Barrington",
+      "career": "UX designer",
+      "socials": [
+        {
+          "icon": "fa-brands fa-twitter"
+        },
+        {
+          "icon": "fa-brands fa-facebook"
+        },
+        {
+          "icon": "fa-brands fa-dribbble"
+        }
+      ]
+    },
+    {
+      "img": "assets/img/team-person-img-6.png",
+      "name": "Brian Oakman",
+      "career": "Project manager",
+      "socials": [
+        {
+          "icon": "fa-brands fa-twitter"
+        },
+        {
+          "icon": "fa-brands fa-facebook"
+        },
+        {
+          "icon": "fa-brands fa-dribbble"
+        }
+      ]
+    },
+    {
+      "img": "assets/img/team-person-img-3.png",
+      "name": "Avery Keat",
+      "career": "Office Manager",
+      "socials": [
+        {
+          "icon": "fa-brands fa-twitter"
+        },
+        {
+          "icon": "fa-brands fa-facebook"
+        },
+        {
+          "icon": "fa-brands fa-dribbble"
+        }
+      ]
+    },
+    {
+      "img": "assets/img/team-person-img-2.png",
+      "name": "Zachary Wainwright",
+      "career": "Co-Founder, Developer",
+      "socials": [
+        {
+          "icon": "fa-brands fa-twitter"
+        },
+        {
+          "icon": "fa-brands fa-facebook"
+        },
+        {
+          "icon": "fa-brands fa-dribbble"
+        }
+      ]
+    },
+    {
+      "img": "assets/img/team-person-img-6.png",
+      "name": "Trinity Page",
+      "career": "Senior UI Designer",
+      "socials": [
+        {
+          "icon": "fa-brands fa-twitter"
+        },
+        {
+          "icon": "fa-brands fa-facebook"
+        },
+        {
+          "icon": "fa-brands fa-dribbble"
+        }
+      ]
+    }
+  ]
+}

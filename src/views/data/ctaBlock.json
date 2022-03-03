@@ -1,0 +1,18 @@
+{
+  "heading": "Create Something Awesome",
+  "subHeading": "We have created a new product that will help designers, developers and companies create websites for their startups quickly and easily.",
+  "contents": [
+    {
+      "icon": "fa-brands fa-dropbox",
+      "heading": "Connect with Dropbox",
+      "text": "Generate leads and sales with our effective call-to-action blocks from buttons to testimonials to forms.",
+      "btn": "Get Started"
+    },
+    {
+      "icon": "fa-brands fa-github-alt",
+      "heading": "Connect with GitHub",
+      "text": "Carefully crafted precise design, with harmonious typography and perfect padding around every component.",
+      "btn": "Get Started"
+    }
+  ]
+}

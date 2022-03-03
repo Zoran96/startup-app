@@ -1,0 +1,121 @@
+.register {
+  .main-heading {
+    margin-bottom: 45px;
+  }
+
+  .secondary-btn {
+    align-self: flex-start;
+    border: none;
+    padding: 16px 74px;
+    cursor: pointer;
+  }
+
+  .input-main {
+    margin-bottom: 21px;
+  }
+
+  .label-main {
+    margin-bottom: 11px;
+  }
+
+  @include phone {
+    .main-heading {
+      font-size: 30px;
+      line-height: 35px;
+      text-align: center;
+    }
+
+    .secondary-btn {
+      align-self: center;
+      padding: 13px 50px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.register__container {
+  display: flex;
+
+  @include responsive {
+    flex-direction: column-reverse;
+  }
+}
+
+.register__content-container {
+  @include flex-column(initial, initial);
+  flex: 1;
+}
+
+.register__content {
+  max-width: 487px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 103px;
+
+  @include tablet {
+    padding: 55px 0px;
+  }
+
+  @include phone {
+    padding: 40px 0px;
+  }
+}
+
+.register__form {
+  @include phone {
+    @include flex-column(initial, initial);
+  }
+}
+
+.register__form-action {
+  display: flex;
+  margin-top: 35px;
+
+  @include responsive {
+    justify-content: space-between;
+  }
+
+  @include phone {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.register__form-action-policy {
+  font-family: $main-font;
+  font-weight: $fntweight-regular;
+  font-size: 16px;
+  line-height: 26px;
+  color: rgba($haiti, 0.4);
+  max-width: 240px;
+  width: 100%;
+  margin-left: 18px;
+  margin-top: 6px;
+
+  @include phone {
+    margin-left: unset;
+    align-self: center;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.register__bg {
+  flex: 0.96;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include tablet {
+    min-height: 500px;
+    max-height: 350px;
+    height: 100%;
+  }
+  
+  @include phone {
+    min-height: 350px;
+    max-height: 350px;
+    height: 100%;
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "logo": "Startup 3",
+  "menu": [
+    {
+      "link": "Home",
+      "href": "index.html"
+    },
+    {
+      "link": "Shop",
+      "href": "",
+      "containsSubmenu": true,
+      "subContent": [
+        {
+          "subMenu": [
+            {
+              "heading": "Categories",
+              "menu": [
+                {
+                  "link": "Computers"
+                },
+                {
+                  "link": "Keyboards"
+                },
+                {
+                  "link": "Tablets"
+                },
+                {
+                  "link": "Memory Cards"
+                },
+                {
+                  "link": "Motherboards"
+                },
+                {
+                  "link": "Printers"
+                },
+                {
+                  "link": "Scanners"
+                },
+                {
+                  "link": "3G Modems"
+                }
+              ]
+            }
+          ],
+          "ctaBlock": [
+            {
+              "primary": [
+                {
+                  "swiper": [
+                    {
+                      "heading": "You can order any stuff in our online shop",
+                      "text": "Try it  yourself and get 10% discount",
+                      "imgSrc": "assets/img/swiper-slide-1.png"
+                    },
+                    {
+                      "heading": "Browse tablets at reasonable price!",
+                      "text": "Try it  yourself and get 10% discount",
+                      "imgSrc": "assets/img/swiper-slide-2.jpg"
+                    },
+                    {
+                      "heading": "New 24 inch Imac and the old 27!",
+                      "text": "Try it  yourself and get 10% discount",
+                      "imgSrc": "assets/img/swiper-slide-3.jpg"
+                    },
+                    {
+                      "heading": "Gaming keyboards, apple keyboard...",
+                      "text": "Try it  yourself and get 10% discount",
+                      "imgSrc": "assets/img/swiper-slide-4.jpg"
+                    },
+                    {
+                      "heading": "Cheapest printers!",
+                      "text": "Try it  yourself and get 10% discount",
+                      "imgSrc": "assets/img/swiper-slide-5.jpg"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "heading": "Smart watches",
+                      "imgSrc": "assets/img/header__cta-block-primary-item-img1.png"
+                    },
+                    {
+                      "heading": "Cameras",
+                      "imgSrc": "assets/img/header__cta-block-primary-item-img2.png"
+                    },
+                    {
+                      "heading": "Gamepads",
+                      "imgSrc": "assets/img/header__cta-block-primary-item-img3.png"
+                    }
+                  ]
+                }
+              ],
+              "secondary": [
+                {
+                  "heading": "Register now and get you 15% discount as a new customer",
+                  "link": "Get 15% Discount",
+                  "imgSrc": "assets/img/header__cta-block-secondary-bg.png"
+                }
+              ]
+            }
+          ],
+          "backBtn": "Back"
+        }
+      ]
+    },
+    {
+      "link": "Sign Up",
+      "href": "register.html"
+    },
+    {
+      "link": "Prices",
+      "href": "prices.html"
+    },
+    {
+      "link": "Team",
+      "href": "teams.html"
+    }
+  ],
+  "mainBTN": [
+    {
+      "btn": "Contact Us",
+      "href": "contact.html"
+    }
+  ],
+  "secondaryBTN": [
+    {
+      "btn": "F.A.Q",
+      "href": "index.html#f.a.q."
+    }
+  ]
+}

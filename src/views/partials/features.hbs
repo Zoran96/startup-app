@@ -1,0 +1,31 @@
+<section class="features" style="background-image: url('{{features.bg}}');">
+  <div class="features__overlay"></div>
+  <div class="wrap">
+    <div class="features__container">
+      {{#if features.heading}}
+      <h1 class="main-heading faded animateFadeInFromTop" data-duration="1s" data-delay="0.2s">{{features.heading}}</h1>
+      {{/if}}
+      {{#if features.subHeading}}
+      <h3 class="sub-heading sub-heading--lighter-white faded animateFadeInFromTop" data-duration="1s" data-delay="0.3s">{{features.subHeading}}</h3>
+      {{/if}}
+      <div class="features__boxes">
+        {{#each features.boxes}}
+        <div class="features__box faded animateFadeInFromTop" data-duration="0.8s" data-delay="0.4s">
+          {{#if this.icon}}
+          <i class="{{this.icon}} features__box-icon"></i>
+          {{/if}}
+          {{#if this.heading}}
+          <h4 class="features__box-heading">{{this.heading}}</h4>
+          {{/if}}
+          {{#if this.text}}
+          <p class="text">{{this.text}}</p>
+          {{/if}}
+          {{#if this.btn}}
+          <a href="#" class="main-btn main-btn--red-bg">{{this.btn}}</a>
+          {{/if}}
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</section>

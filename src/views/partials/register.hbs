@@ -1,0 +1,34 @@
+<section class="register">
+  <div class="register__container">
+    <div class="register__content-container">
+      <div class="wrap">
+        <div class="register__content">
+          <h1 class="main-heading main-heading--purple">{{register.heading}}</h1>
+          <form action="#" class="register__form">
+            {{#each register.form}}
+            {{#each this.inputs}}
+            {{#each this.label}}
+            <label for="{{this.for}}" class="label-main">{{this.text}}</label>
+            {{/each}}
+            {{#each this.input}}
+            <input type="{{this.type}}" name="{{this.name}}" class="input-main" placeholder="{{this.placeholder}}">
+            {{/each}}
+            {{/each}}
+            {{/each}}
+            <div class="register__form-action">
+              {{#each register.form}}
+              {{#each this.action}}
+              <button type="submit" class="secondary-btn">{{this.btn}}</button>
+              {{#if this.policy}}
+              <span class="register__form-action-policy">{{this.policy}}</span>
+              {{/if}}
+              {{/each}}
+              {{/each}}
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="register__bg" style="background-image: url({{register.bg}});"></div>
+  </div>
+</section>

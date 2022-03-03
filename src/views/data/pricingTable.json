@@ -1,0 +1,86 @@
+{
+  "subHeading": "Pricing Plan",
+  "mainHeading": "Clear & Simple",
+  "boxes": [
+    {
+      "heading": "Free",
+      "price": "$0/month",
+      "icon": "fa-solid fa-bolt",
+      "btn": "Get Started",
+      "benefits": [
+        {
+          "benefit": "Up to 5 Members"
+        },
+        {
+          "benefit": "Backups for 2 Weeks"
+        },
+        {
+          "benefit": "50 Mb per File"
+        },
+        {
+          "benefit": "100 Messages"
+        }
+      ]
+    },
+    {
+      "heading": "Starter",
+      "price": "$9.99/month",
+      "icon": "fa-solid fa-bomb",
+      "btn": "Get Started",
+      "benefits": [
+        {
+          "benefit": "Up to 10 Members"
+        },
+        {
+          "benefit": "Backups for 2 Months"
+        },
+        {
+          "benefit": "250 Mb per File"
+        },
+        {
+          "benefit": "1000 Messages"
+        }
+      ]
+    },
+    {
+      "heading": "Standard",
+      "price": "$19.99/month",
+      "icon": "fa-solid fa-heart",
+      "btn": "Get Started",
+      "benefits": [
+        {
+          "benefit": "Up to 20 Members"
+        },
+        {
+          "benefit": "Backups for 6 Months"
+        },
+        {
+          "benefit": "Unlimited Size per File"
+        },
+        {
+          "benefit": "Unlimited Messages"
+        }
+      ]
+    },
+    {
+      "heading": "Enterprise",
+      "price": "$49.99/month",
+      "icon": "fa-solid fa-building",
+      "btn": "Get Started",
+      "benefits": [
+        {
+          "benefit": "Up to 20 Members"
+        },
+        {
+          "benefit": "Backups for 12 Month"
+        },
+        {
+          "benefit": "Unlimited Size per File"
+        },
+        {
+          "benefit": "Unlimited Messages"
+        }
+      ]
+    }
+  ]
+}

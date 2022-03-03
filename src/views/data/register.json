@@ -1,0 +1,61 @@
+{
+  "heading": "Sign Up to Discover Startup Features",
+  "form": [
+    {
+      "inputs": [
+        {
+          "label": [
+            {
+              "text": "Name",
+              "for": "name"
+            }
+          ],
+          "input": [
+            {
+              "type": "text",
+              "name": "name",
+              "placeholder": "Your name"
+            }
+          ]
+        },
+        {
+          "label": [
+            {
+              "text": "Email",
+              "for": "email"
+            }
+          ],
+          "input": [
+            {
+              "type": "email",
+              "name": "email",
+              "placeholder": "Your email"
+            }
+          ]
+        },
+        {
+          "label": [
+            {
+              "text": "Password",
+              "for": "password"
+            }
+          ],
+          "input": [
+            {
+              "type": "password",
+              "name": "password",
+              "placeholder": "Your password"
+            }
+          ]
+        }
+      ],
+      "action": [
+        {
+          "btn": "Sign Up",
+          "policy": "By signing up you agree to Our Terms and Privacy Policy"
+        }
+      ]
+    }
+  ],
+  "bg": "assets/img/register-img.png"
+}

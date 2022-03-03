@@ -1,0 +1,195 @@
+.crew-module {
+  padding: 92px 0px;
+
+  .main-heading {
+    margin-bottom: 18px;
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .sub-heading {
+    max-width: 820px;
+    width: 100%;
+    margin-bottom: 48px;
+  }
+
+  .secondary-btn {
+    color: $violent-violet;
+    background-color: transparent;
+    border: 2px solid $athens-gray;
+    padding: 10px 34px;
+    margin: 0 auto;
+    margin-bottom: 76px;
+    position: relative;
+    transition-property: background-color, color, opacity;
+    transition-timing-function: ease;
+    transition-duration: 0.3s;
+  
+    &:active {
+      transform: scale(0.96);
+    }
+  
+    @include hover {
+      background-color: $violent-violet;
+      color: $white;
+      opacity: 1;
+    }
+  }
+
+  @include tablet {
+    padding: 70px 0px;
+  }
+
+  @include phone {
+    padding: 55px 0px;
+
+    .secondary-btn {
+      line-height: 18px;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.crew-module__container {
+  @include flex-column(initial, center);
+  text-align: center;
+}
+
+.crew-module__btn-icon {
+  color: $violent-violet;
+  display: inline-block;
+  font-weight: 900; 
+  font-size: 22px;
+  position: absolute;
+  left: -40px;
+  animation: animatedIconHand 0.5s ease-in infinite alternate forwards;
+  pointer-events: none;
+  cursor: default;
+  top: 15px;
+
+  @include phone {
+    top: 10px
+  }
+}
+
+.crew-module__boxes {
+  @include flex-row(space-between, initial);
+  align-self: stretch;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+
+  @include responsive {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.crew-module__box {
+  display: none;
+  border-left: 1px solid $athens-gray;
+  border-top: 1px solid $athens-gray;
+  border-right: 1px solid $athens-gray;
+  border-radius: 10px;
+  max-width: 370px;
+  width: 100%;
+  padding: 49px 50px 0px 50px;
+  margin-bottom: 40px;
+
+  &:nth-child(1) {
+    display: block;
+  }
+
+  &:nth-child(2) {
+    display: block;
+  }
+
+  &:nth-child(3) {
+    display: block;
+  }
+
+  .sub-heading {
+    color: $violent-violet;
+    margin-bottom: 12px;
+  }
+
+  @include phone {
+    max-width: 303px;
+    padding: 30px 25px 0px 25px;
+
+    .sub-heading {
+      font-size: 20px;
+      line-height: 23px;
+    }
+  }
+}
+
+.crew-module__box-photo {
+  margin-bottom: 24px;
+  border-radius: 100px;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+
+  @include phone {
+    height: 120px;
+    width: 120px;
+  }
+}
+
+.crew-module__box-career {
+  display: inline-block;
+  font-family: $main-font;
+  font-weight: $fntweight-bold;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 2px;
+  color: rgba($haiti, 0.4);
+  text-transform: uppercase;
+  margin-bottom: 41px;
+
+  @include phone {
+    font-size: 13px;
+    line-height: 18px;
+  }
+}
+
+.crew-module__box-socials {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -50px;
+  margin-left: -50px;
+
+  @include phone {
+    margin-right: -25px;
+    margin-left: -25px;
+  }
+}
+
+.crew-module__box-social-link {
+  display: inline-block;
+  border: 1px solid $athens-gray;
+  flex: 1;
+  padding: 16px 45px;
+
+  @include transition(background-color, 0.3s, ease);
+
+  @include hover {
+    background-color: $athens-gray;
+
+    .crew-module__box-social-icon {
+      color: $violent-violet;
+    }
+  }
+
+  @include phone {
+    padding: 8px 25px;
+  }
+}
+
+.crew-module__box-social-icon {
+  color: rgba($haiti, 0.4);
+  font-size: 22px;
+
+  @include transition(color, 0.5s, ease);
+}
+

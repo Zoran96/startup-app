@@ -1,0 +1,58 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+	font-family: $main-font;
+	font-weight: $fntweight-regular;
+	color: $main-color;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+  
+li {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrap {
+	margin: 0 auto;
+	max-width: 1206px;
+	padding: 0 20px;
+	width: 100%;
+}
+
+.disable-scroll {
+  overflow: hidden;
+}
+
+.sr-only {
+  border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+.remove {
+  display: none;
+}
+
+.faded {
+  opacity: 0;
+}
+
+.ie-flex-container {
+  display: flex;
+}

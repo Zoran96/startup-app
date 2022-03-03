@@ -1,0 +1,27 @@
+<section class="pricing-table">
+  <div class="wrap">
+    <div class="pricing-table__container">
+      {{#if pricingTable.subHeading}}
+      <h2 class="third-heading">{{pricingTable.subHeading}}</h2>
+      {{/if}}
+      <h1 class="main-heading main-heading--purple">{{pricingTable.mainHeading}}</h1>
+      <div class="pricing-table__boxes">
+        {{#each pricingTable.boxes}}
+        <div class="pricing-table__box">
+          <h3 class="sub-heading">{{this.heading}}</h3>
+          <span class="pricing-table__box-price">{{this.price}}</span>
+          <div class="pricing-table__box-icon-container">
+            <i class="pricing-table__box-icon {{this.icon}}"></i>
+          </div>
+          <a href="#" class="secondary-btn">{{this.btn}}</a>
+          <ul class="pricing-table__box-benefits">
+            {{#each this.benefits}}
+            <li class="pricing-table__box-benefit">{{this.benefit}}</li>
+            {{/each}}
+          </ul>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</section>

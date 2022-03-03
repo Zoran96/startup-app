@@ -1,0 +1,132 @@
+.contact-module {
+  position: relative;
+  padding: 102px 0px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .main-heading {
+    text-align: center;
+    max-width: 770px;
+    width: 100%;
+    z-index: 2;
+    margin-bottom: 28px;
+  }
+
+  .sub-heading {
+    text-align: center;
+    max-width: 770px;
+    width: 100%;
+    z-index: 2;
+    margin-bottom: 66px;  
+  }
+
+  .input-secondary {    
+    padding: 13px 26px;
+    z-index: 2;
+    position: relative;
+    margin-bottom: 36px;
+    outline-color: $white;
+    border-radius: 100px;
+  }
+
+  .input-secondary--message {
+    border-radius: 10px;
+    width: 100%;
+    min-height: 150px;
+    height: 100%;
+    z-index: 2;
+    position: relative;
+    padding: 11px 18px;
+    outline-color: $white;
+  }
+
+  .secondary-btn {
+    padding: 15px 48px;
+    border: none;
+    z-index: 2;
+    position: relative;
+    cursor: pointer;
+  }
+
+  @include tablet {
+    padding: 80px 0px;
+  }
+
+  @include phone {
+    padding: 60px 0px;
+
+    .input-secondary--message {
+      padding: 15px 18px;
+    }
+
+    .secondary-btn {
+      padding: 13px 30px;
+    }
+  }
+
+  @include IE-breakpoint {
+    .input-secondary,
+    .input-secondary--message {
+      &:focus {
+        border: 2px solid $white;
+        outline-style: none;
+      }
+    }
+  }
+}
+
+.contact-module__container {
+  @include flex-column(initial, center);
+}
+
+.contact-module__content {
+  max-width: 768px;
+  width: 100%;
+  margin: 0 auto;
+
+  @include phone {
+    max-width: 450px;
+  }
+}
+
+.contact-module__content-form {
+  @include flex-column(initial, center);
+}
+
+.contact-module__content-form-inputs {
+  @include flex-row(space-between, initial);
+  align-self: stretch;
+  margin-bottom: 28px;
+
+  @include phone {
+    flex-direction: column;
+  }
+}
+
+.contact-module__content-form-inputs-info {
+  @include flex-column(initial, initial);
+  margin-right: 31px;
+
+  @include phone {
+    margin-right: unset;
+  }
+}
+
+.contact-module__content-form-inputs-label {
+  position: absolute;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.contact-module__overlay {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba($persian-indigo, 0.5);
+  z-index: 1;
+}

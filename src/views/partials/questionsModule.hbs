@@ -1,0 +1,21 @@
+<section class="questions-module" id="f.a.q.">
+  <div class="wrap">
+    <div class="questions-module__container">
+      {{#if questionsModule.heading}}
+      <h1 class="main-heading main-heading--purple faded animateFadeInFromTop" data-duration="1s" data-delay="0s">{{questionsModule.heading}}</h1>
+      {{/if}}
+      <div class="questions-module__info">
+        {{#each questionsModule.contents}}
+        <div class="questions-module__content faded animateFadeInFromTop" data-duration="0.5s" data-delay="0s">
+          {{#each this.info}}
+          <div class="questions-module__content-info">
+            <h3 class="questions-module__content-question">{{this.question}}</h3>
+            <p class="text">{{this.answer}}</p>
+          </div>
+          {{/each}}
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</section>

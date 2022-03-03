@@ -1,0 +1,27 @@
+<section class="banner">
+  <div class="wrap">
+    <div class="banner__container">
+      {{#each banner.banner}}
+      <div class="banner__content">
+        {{#if this.heading}}
+        <h1 class="banner__heading">{{this.heading}}</h1>
+        {{/if}}
+        {{#if this.subHeading}}
+        <h2 class="sub-heading">{{this.subHeading}}</h2>
+        {{/if}}
+        {{#if this.btn}}
+        <a href="#" class="secondary-btn">{{this.btn}}</a>
+        {{/if}}
+      </div>
+      {{#if this.media}}
+      {{#each this.media}}
+      <div class="banner__media">
+        <img src="{{this.frontImg}}" alt="" class="banner__media-front-img">
+        <img src="{{this.backImg}}" alt="" class="banner__media-back-img">
+      </div>
+      {{/each}}
+      {{/if}}
+      {{/each}}
+    </div>
+  </div>
+</section>

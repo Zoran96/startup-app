@@ -1,0 +1,30 @@
+<section class="crew-module">
+  <div class="wrap">
+    <div class="crew-module__container js-crew-module-container">
+      <h1 class="main-heading main-heading--purple">{{crewModule.heading}}</h1>
+      {{#if crewModule.text}}
+      <p class="sub-heading sub-heading--gray">{{crewModule.text}}</p>
+      {{/if}}
+      <div class="crew-module__boxes">
+        {{#each crewModule.boxes}}
+        <div class="crew-module__box js-crew-module-box">
+          <img src="{{this.img}}" alt="Profile Picture" class="crew-module__box-photo">
+          <h3 class="sub-heading">{{this.name}}</h3>
+          <span class="crew-module__box-career">{{this.career}}</span>
+          <div class="crew-module__box-socials">
+            {{#each this.socials}}
+            <a href="#" class="crew-module__box-social-link">
+              <i class="crew-module__box-social-icon {{this.icon}}"></i>
+            </a>
+            {{/each}}
+          </div>
+        </div>
+        {{/each}}
+      </div>
+      <a href="#" class="secondary-btn">
+        {{crewModule.btn}}
+        <i class="crew-module__btn-icon {{crewModule.btnIcon}}"></i>
+      </a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,37 @@
+{ 
+  "heading": "Your questions answered",
+  "contents": [
+    {
+      "info": [
+        {
+          "question": "How Startup Framework works?",
+          "answer": "The Generator App is an online tool that helps you to export ready-made templates ready to work as your future website. It helps you to combine slides, panels and other components and export it as a set of static files: HTML/CSS/JS."
+        },
+        {
+          "question": "What exactly am I buying?",
+          "answer": "You’re buying an access to the Startup Generator app to export ready-made templates with the rest source files included. It’s an online tool, not a software. For more details about generator’s workflow watch this tutorial."
+        },
+        {
+          "question": "How Startup Framework works?",
+          "answer": "The Generator App is an online tool that helps you to export ready-made templates ready to work as your future website. It helps you to combine slides, panels and other components and export it as a set of static files: HTML/CSS/JS."
+        }
+      ]
+    },
+    {
+      "info": [
+        {
+          "question": "Do you provide hosting with Startup Framework?",
+          "answer": "No, hosting is on you. You upload the result on your hosting via FTP or using other tools you like. You can use any server, just make sure it have a PHP installed in case if you need a contact form."
+        },
+        {
+          "question": "Are you planning to update Startup Framework?",
+          "answer": "We are! Here is the changelog of changes we’ve made after the release. Thanks our clients who helped us to improve our product."
+        },
+        {
+          "question": "Do you provide support for customers?",
+          "answer": "Yes, we are. Please use our contact us form to chat with us. We DO NOT provide product support via Facebook, Twitter or others sources."
+        }
+      ]
+    }
+  ]
+}

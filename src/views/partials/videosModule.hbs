@@ -1,0 +1,38 @@
+<section class="videos-module">
+  <div class="wrap">
+    <div class="videos-module__container">
+      <h1 class="main-heading faded animateFadeInFromLeft" data-duration="1s" data-delay="0s">{{videosModule.heading}}</h1>
+      {{#each videosModule.mainVideo}}
+      <div class="videos-module__main-video-container js-videos-module-main-video-container faded animateFadeIn" data-duration="1s" data-delay="0s">
+        <div class="videos-module__main-video-poster js-videos-module-main-video-poster" style="background-image: url({{this.poster}});"></div>
+        <iframe class="videos-module__main-video js-videos-module-main-video" width="560" height="315" src="{{this.videoSrc}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <button class="videos-module__main-video-btn js-videos-module-main-video-btn">
+          <span class="sr-only">Play Button</span>
+        </button>
+      </div>
+      {{/each}}
+      <div class="videos-module__previews">
+        {{#each videosModule.modulePreviews}}
+        <div class="videos-module__preview js-videos-module-preview">
+          <a href="#" class="videos-module__preview-link">
+            <img src="{{this.imgSrc}}" alt="" class="videos-module__preview-img">
+          </a>
+          <div class="videos-module__preview-content">
+            <h4 class="videos-module__preview-heading">{{this.heading}}</h4>
+            <p class="text">{{this.text}}</p>
+          </div>
+          <div class="videos-module__preview-modal-container js-videos-module-preview-modal-container">
+            <div class="videos-module__preview-modal">
+              <button class="videos-module__preview-modal-btn js-videos-module-preview-modal-btn">
+                <span class="sr-only">Close Button</span>
+                <i class="fa-solid fa-xmark videos-module__preview-modal-btn-ico"></i>
+              </button>
+              <iframe class="videos-module__preview-modal-video" src="{{this.videoSrc}}"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</section>

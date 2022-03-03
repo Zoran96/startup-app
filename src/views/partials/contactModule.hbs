@@ -1,0 +1,35 @@
+<section class="contact-module" style="background-image: url('{{contactModule.bg}}');">
+  <div class="wrap">
+    <div class="contact-module__container">
+      <h1 class="main-heading">{{contactModule.mainHeading}}</h1>
+      {{#if contactModule.subHeading}}
+      <h2 class="sub-heading">{{contactModule.subHeading}}</h2>
+      {{/if}}
+      <div class="contact-module__content">
+        {{#each contactModule.form}}
+        <form action="#" class="contact-module__content-form">
+          <div class="contact-module__content-form-inputs">
+            <div class="contact-module__content-form-inputs-info">
+              {{#each this.inputs}}
+              {{#each this.label}}
+              <label for="{{this.for}}" class="contact-module__content-form-inputs-label"></label>
+              {{/each}}
+              {{#each this.input}}
+              <input type="{{this.type}}" name="{{this.name}}" class="input-secondary" placeholder="{{this.placeholder}}">
+              {{/each}}
+              {{/each}}
+            </div>
+            {{#each this.textarea}}
+            <textarea class="input-secondary input-secondary--message" name="{{this.name}}" placeholder="{{this.placeholder}}"></textarea>
+            {{/each}}
+          </div>
+          <button type="submit" class="secondary-btn">{{this.btn}}</button>
+        </form>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+  {{#if contactModule.overlay}}
+  <div class="contact-module__overlay"></div>
+  {{/if}}
+</section>

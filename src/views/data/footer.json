@@ -1,0 +1,65 @@
+{
+  "cta": [
+    {
+      "heading": "200,000 users registered since January 2015",
+      "subHeading": "We’ve created the product that will help your startup to look even better",
+      "form": [
+        {
+          "btn": "Subscribe"
+        }
+      ],
+      "terms": [
+        {
+          "term": "Terms of Service",
+          "policy": "Privacy Policy"
+        }
+      ]
+    }
+  ],
+  "menu": [
+    {
+      "heading": "About",
+      "list": [
+        {
+          "link": "Features"
+        },
+        {
+          "link": "Templates"
+        },
+        {
+          "link": "Integrations"
+        },
+        {
+          "link": "Team"
+        }
+      ]
+    },
+    {
+      "heading": "Resources",
+      "list": [
+        {
+          "link": "Ebooks"
+        },
+        {
+          "link": "Infographics"
+        },
+        {
+          "link": "Tools"
+        },
+        {
+          "link": "Videos"
+        },
+        {
+          "link": "Podcasts"
+        }
+      ]
+    }
+  ],
+  "action": [
+    {
+      "mainBtn": "Buy App Now",
+      "secondaryBtn": "or Learn More"
+    }
+  ],
+  "backBtn": "Go Back"
+}

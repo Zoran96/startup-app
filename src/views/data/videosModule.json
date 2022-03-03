@@ -1,0 +1,23 @@
+{
+  "heading": "We’ve created the product that will help your startup look better",
+  "mainVideo": [
+    {
+      "poster": "assets/img/videos-module-main.png",
+      "videoSrc": "https://www.youtube.com/embed/QR-tZqiKCrg?&showinfo=0&autohide=1"
+    }
+  ],
+  "modulePreviews": [
+    {
+      "imgSrc": "assets/img/videos-module-preview-img-1.png",
+      "heading": "Fell our design",
+      "text": "Startup Design Framework contains components which can easily be integrated into almost any design.",
+      "videoSrc": "https://www.youtube.com/embed/QR-tZqiKCrg?&showinfo=0&autohide=1"
+    },
+    {
+      "imgSrc": "assets/img/videos-module-preview-img-2.png",
+      "heading": "High Resolution",
+      "text": "We did a 2.5K size high resolution photo that will suit even for a very web site.",
+      "videoSrc": "https://www.youtube.com/embed/sjkrrmBnpGE"
+    }
+  ]
+}

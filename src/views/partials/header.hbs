@@ -1,0 +1,110 @@
+<header class="header js-header" id="header">
+  <div class="wrap">
+    <div class="header__container">
+      <a href="index.html" class="header__logo">{{header.logo}}</a>
+      <nav class="header__navbar js-header-navbar">
+        <ul class="header__menu">
+          {{#each header.menu}}
+          <li class="header__menu-item js-header-menu-item {{#if this.containsSubmenu}}js-submenu{{/if}}">
+            <a href="{{#if this.href}}{{this.href}}{{else}}#{{/if}}" class="header__menu-link js-header-menu-link {{#if this.containsSubmenu}}header__menu-link--contains-submenu{{/if}}">{{this.link}}</a>
+            {{#if this.subContent}}
+            {{#each this.subContent}}
+            <div class="header__subcontent js-header-subcontent">
+              <div class="wrap">
+                <div class="header__subcontent-container">
+                  {{#if this.subMenu}}
+                  <div class="header__submenu">
+                    {{#each this.subMenu}}
+                    <h3 class="header__submenu-heading">{{this.heading}}</h3>
+                    <ul class="header__submenu-list">
+                      {{#each this.menu}}
+                      <li class="header__submenu-item">
+                        <a href="#" class="header__submenu-link">{{this.link}}</a>
+                      </li>
+                      {{/each}}
+                    </ul>
+                    {{/each}}
+                  </div>
+                  {{/if}}
+                  {{#if this.ctaBlock}}
+                  {{#each this.ctaBlock}}
+                  <div class="header__cta-block">
+                    {{#if this.primary}}
+                    {{#each this.primary}}
+                    <div class="header__cta-block-primary">
+                      {{#if this.swiper}}
+                      <div class="header__cta-block-primary-slider">
+                        <div class="swiper">
+                          <div class="swiper-wrapper">
+                            {{#each this.swiper}}
+                            <div class="swiper-slide" style="background-image: url('{{this.imgSrc}}');">
+                              <h2 class="sub-heading">{{this.heading}}</h2>
+                              <span class="header__cta-block-primary-slider-text">{{this.text}}</span>
+                            </div>
+                            {{/each}}
+                          </div>
+                          <div class="swiper-pagination"></div>
+                        </div>
+                      </div>
+                      {{/if}}
+                      {{#if this.items}}
+                      <div class="header__cta-block-primary-items">
+                        {{#each this.items}}
+                        <div class="header__cta-block-primary-item">
+                          <a href="#" class="header__cta-block-primary-link"></a>
+                          <h3 class="header__cta-block-primary-item-heading">{{this.heading}}</h3>
+                          <img src="{{this.imgSrc}}" alt="" class="header__cta-block-primary-item-img">
+                        </div>
+                        {{/each}}
+                      </div>
+                      {{/if}}
+                    </div>
+                    {{/each}}
+                    {{/if}}
+                    {{#if this.secondary}}
+                    {{#each this.secondary}}
+                    <div class="header__cta-block-secondary" style="background-image: url('{{this.imgSrc}}');">
+                      {{#if this.heading}}
+                      <h2 class="header__cta-block-secondary-heading">{{this.heading}}</h2>
+                      {{/if}}
+                      {{#if this.link}}
+                      <a href="#" class="secondary-btn">{{this.link}}</a>
+                      {{/if}}
+                    </div>
+                    {{/each}}
+                    {{/if}}
+                  </div>
+                  {{/each}}
+                  {{/if}}
+                  {{#if this.backBtn}}
+                  <a href="#" class="secondary-btn header__subcontent-container-btn js-header-subcontent-container-btn">{{this.backBtn}}</a>
+                  {{/if}}
+                </div>
+              </div>
+            </div>
+            {{/each}}
+            {{/if}}
+          </li>
+          {{/each}}
+        </ul>
+        {{#if header.mainBTN}}
+        {{#each header.mainBTN}}
+        <a href="{{this.href}}" class="main-btn">{{this.btn}}</a>
+        {{/each}}
+        {{/if}}
+        {{#if header.secondaryBTN}}
+        {{#each header.secondaryBTN}}
+        <a href="{{this.href}}" class="header__menu-btn">{{this.btn}}</a>
+        {{/each}}
+        {{/if}}
+      </nav>
+      <button class="header__toggle js-header-toggle">
+        <span class="sr-only"></span>
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+
+

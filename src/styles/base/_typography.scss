@@ -1,0 +1,139 @@
+.main-heading {
+  font-family: $main-font;
+  font-weight: $fntweight-bold;
+  font-size: 42px;
+  line-height: 52px;
+  letter-spacing: -0.4px;
+  color: $main-color;
+
+  @include phone {
+    font-size: 22px;
+    line-height: 25px;
+  }
+}
+
+.main-heading--purple {
+  color: $violent-violet;
+}
+
+.sub-heading {
+  font-family: $main-font;
+  font-weight: $fntweight-medium;
+  font-size: 22px;
+  line-height: 32px;
+  color: $main-color;
+
+  @include phone {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+.sub-heading--gray {
+  color: rgba($haiti, 0.4);
+}
+
+.sub-heading--lighter-white {
+  color: rgba($white, 0.7);
+}
+
+.third-heading {
+  font-family: $main-font;
+  font-weight: $fntweight-bold;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 2px;
+  color: rgba($violent-violet, 0.4);
+
+  @include phone {
+    font-size: 13px;
+    line-height: 25px;
+  }
+}
+
+.label-main {
+  font-family: $main-font;
+  font-weight: $fntweight-bold;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 2px;
+  color: $violent-violet;
+  text-transform: uppercase;
+  display: inline-block;
+
+  @include phone {
+    font-size: 13px;
+    line-height: 24px;
+  }
+}
+
+.input-main {
+  font-family: $main-font;
+  font-weight: $fntweight-medium;
+  border-radius: 100px;
+  border: 2px solid $athens-gray;
+  padding: 15px 20px;
+  width: 100%;
+  font-size: 20px;
+  line-height: 26px;
+  outline-color: $turquoise;
+
+  &:focus {
+    border: 2px solid transparent;
+    outline-style: solid;
+  }
+
+  &::placeholder {
+    color: $athens-gray;
+  }
+
+  @include phone {
+    padding: 13px 18px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @include IE-breakpoint {
+    &:focus {
+      border: 2px solid $turquoise;
+      outline-style: none;
+    }
+  }
+}
+
+.input-secondary {
+  font-family: $main-font;
+  font-weight: $fntweight-medium;
+  font-size: 18px;
+  line-height: 26px;
+  border: 2px solid rgba($white, 0.2);
+  background-color: transparent;
+  color: $white;
+
+  &:focus {
+    outline-style: solid;
+    border: 2px solid transparent;
+  }
+
+  &::placeholder {
+    color: rgba($white, 0.4);
+  }
+
+  @include phone {
+    font-size: 15px;
+    line-height: 13px;
+  }
+}
+
+.text {
+  font-family: $main-font;
+  font-weight: $fntweight-regular;
+  font-size: 16px;
+  line-height: 26px;
+  color: rgba($white, 0.7);
+
+  @include phone {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

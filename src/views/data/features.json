@@ -1,0 +1,27 @@
+{
+  "bg": "assets/img/features-bg.png",
+  "heading": "Features",
+  "subHeading": "We have created a new product that will help designers, developers and companies create websites for their startups quickly and easily.",
+  "boxes": [
+    {
+      "icon": "fa-solid fa-bolt",
+      "heading": "Easy to Use",
+      "text": "To get started, you select the desired sample and base the entire website on it. It’s that simple!",
+      "btn": "Learn More"
+    },
+    {
+      "icon": "fa-solid fa-shuffle",
+      "heading": "Variety of Designs",
+      "text": "You can decide whether to create your site using UI Kit blocks or samples. The blocks can merge together in various combinations.",
+      "btn": "Learn More"
+    },
+    {
+      "icon": "fa-solid fa-circle-play",
+      "heading": "Feel Our Design",
+      "text": "Samples will show you the feeling on how to play around using the components in the website building process.",
+      "btn": "Learn More"
+    }
+  ]
+}
+
+ 

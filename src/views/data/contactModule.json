@@ -1,0 +1,47 @@
+{
+  "bg": "assets/img/contact-bg.png",
+  "mainHeading": "Drop Us a Line",
+  "subHeading": "We have created a new product that will help designers, developers and companies create websites for their startups quickly and easily.",
+  "form": [
+    {
+      "inputs": [
+        {
+          "label": [
+            {
+              "for": "name"
+            }
+          ],
+          "input": [
+            {
+              "type": "text",
+              "name": "name",
+              "placeholder": "Your name"
+            }
+          ]
+        },
+        {
+          "label": [
+            {
+              "for": "email"
+            }
+          ],
+          "input": [
+            {
+              "type": "email",
+              "name": "email",
+              "placeholder": "Your email"
+            }
+          ]
+        }
+      ],
+      "textarea": [
+        {
+          "name": "message",
+          "placeholder": "Your message"
+        }
+      ],
+      "btn": "Let's Talk"
+    }
+  ],
+  "overlay": true
+}

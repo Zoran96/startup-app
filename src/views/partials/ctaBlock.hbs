@@ -1,0 +1,30 @@
+<section class="cta-block">
+  <div class="wrap">
+    <div class="cta-block__container faded animateFadeIn" data-duration="1s" data-delay="0s">
+      <h1 class="main-heading main-heading--purple">{{ctaBlock.heading}}</h1>
+      {{#if ctaBlock.subHeading}}
+      <h4 class="cta-block__sub-heading">{{ctaBlock.subHeading}}</h4>
+      {{/if}}
+      <div class="ie-flex-container">
+        <div class="cta-block__contents">
+          {{#each ctaBlock.contents}}
+          <div class="cta-block__content">
+            {{#if this.icon}}
+            <i class="cta-block__content-icon {{this.icon}}"></i>
+            {{/if}}
+            {{#if this.heading}}
+            <h3 class="cta-block__content-heading">{{this.heading}}</h3>
+            {{/if}}
+            {{#if this.text}}
+            <p class="text">{{this.text}}</p>
+            {{/if}}
+            {{#if this.btn}}
+            <a href="#" class="secondary-btn">{{this.btn}}</a>
+            {{/if}}
+          </div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

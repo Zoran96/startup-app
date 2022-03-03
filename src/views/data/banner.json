@@ -1,0 +1,15 @@
+{
+  "banner": [
+    {
+      "heading": "Beautiful Startup Framework for Your Next Project",
+      "subHeading": "A high-quality solution for those who want a bea-utiful startup website quickly.",
+      "btn": "Download from App Store",
+      "media": [
+        {
+          "frontImg": "assets/img/banner__media-img-front.png",
+          "backImg": "assets/img/banner__media-img-back.png"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+<footer class="footer js-footer">
+  <div class="wrap">
+    <div class="footer__container">
+      <div class="footer__contents">
+        {{#if footer.cta}}
+        {{#each footer.cta}}
+        <div class="footer__contents-cta">
+          {{#if this.heading}}
+          <h2 class="footer__contents-cta-heading">{{this.heading}}</h2>
+          {{/if}}
+          {{#if this.subHeading}}
+          <h3 class="footer__contents-cta-sub-heading">{{this.subHeading}}</h3>
+          {{/if}}
+          {{#if this.form}}
+          {{#each this.form}}
+          <div class="footer__contents-cta-form">
+            <label for="email" class="footer__contents-cta-form-input-label"></label>
+            <input type="email" name="email" class="footer__contents-cta-form-input" placeholder="Your email">
+            <button type="submit" class="main-btn">{{this.btn}}</button>
+          </div>
+          {{/each}}
+          {{/if}}
+          {{#if this.terms}}
+          {{#each this.terms}}
+          <div class="footer__contents-cta-terms">
+            <a href="#" class="footer__contents-cta-terms-term">{{this.term}}</a>
+            <a href="#" class="footer__contents-cta-terms-policy">{{this.policy}}</a>
+          </div>
+          {{/each}}
+          {{/if}}
+        </div>
+        {{/each}}
+        {{/if}}
+        {{#if footer.menu}}
+        {{#each footer.menu}}
+        <div class="footer__contents-menu">
+          {{#if this.heading}}
+          <h4 class="footer__contents-menu-heading">{{this.heading}}</h4>
+          {{/if}}
+          <ul class="footer__contents-menu-list">
+            {{#each this.list}}
+            <li class="footer__contents-menu-list-item"><a href="#" class="text">{{this.link}}</a></li>
+            {{/each}}
+          </ul>
+        </div>
+        {{/each}}
+        {{/if}}
+      </div>
+      {{#if footer.action}}
+      {{#each footer.action}}
+      <div class="footer__action">
+        {{#if this.mainBtn}}
+        <a href="#" class="secondary-btn">{{this.mainBtn}}</a>
+        {{/if}}
+        {{#if this.secondaryBtn}}
+        <a href="#" class="footer__action-btn-secondary">{{this.secondaryBtn}}</a>
+        {{/if}}
+      </div>
+      {{/each}}
+      {{/if}}
+    </div>
+  </div>
+  {{#if footer.backBtn}}
+  <a href="index.html#header" class="secondary-btn back-to-top js-back-to-top">{{footer.backBtn}}</a>
+  {{/if}}
+</footer>

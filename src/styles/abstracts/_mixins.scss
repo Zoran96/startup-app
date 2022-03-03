@@ -1,0 +1,65 @@
+/* ******** HOVER ******** */
+
+@mixin hover {
+	@media only screen and (min-width: 1025px) {
+		&:hover {
+			@content;
+		}
+	}
+}
+
+/* ******** TRANSITION ******** */
+
+@mixin transition($property, $duration, $timingfn) {
+	transition-property: $property;
+	transition-duration: $duration;
+	transition-timing-function: $timingfn;
+}
+
+/* ******** BREAKPOINTS ******** */
+
+@mixin phone {
+  @media (max-width: 767px) { 
+    @content; 
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: 768px) and (max-width: 1024px) { 
+    @content; 
+  }
+}
+
+@mixin responsive {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1025px) {
+    @content;
+  }
+}
+
+@mixin IE-breakpoint() {
+	@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+		@content;
+	}
+}
+
+/* ******** FLEX ******** */
+
+@mixin flex-row($justify-content, $align-items) {
+  display: flex;
+  flex-direction: row;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+@mixin flex-column($justify-content, $align-items) {
+  display: flex;
+  flex-direction: column;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}

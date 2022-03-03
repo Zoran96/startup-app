@@ -1,0 +1,141 @@
+.features {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-top: 102px;
+  padding-bottom: 110px;
+  position: relative;
+
+  .main-heading {
+    max-width: 175px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 28px;
+    position: relative;
+    z-index: 5;
+  }
+
+  .sub-heading {
+    max-width: 734px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 54px;
+    position: relative;
+    z-index: 5;
+  }
+
+  .text {
+    margin-bottom: 28px;
+  }
+
+  .main-btn {  
+    @include transition(opacity, 0.3s, ease);
+  
+    @include hover {
+      opacity: 0.6;
+    }  
+  }
+
+  @include tablet {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  @include phone {
+    padding-top: 45px;
+    padding-bottom: 45px;
+
+    .sub-heading {
+      max-width: 550px;
+    }
+  }
+
+  @include IE-breakpoint {
+    .main-heading {
+      opacity: 1;
+    }
+
+    .sub-heading {
+      opacity: 1;
+    }
+  }
+}
+
+.features__overlay {
+  position: absolute;
+  background-color: rgba($persian-indigo, 0.4);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.features__container {
+  @include flex-column(center, initial);
+}
+
+.features__boxes {
+  @include flex-row(space-between, initial);
+
+  @include responsive {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.features__box {
+  border: 2px solid rgba($white, 0.3);
+  border-radius: 10px;
+  padding: 66px 72px 75px 72px;
+  max-width: 370px;
+  width: 100%;
+  position: relative;
+  z-index: 5;
+
+  &:not(:last-of-type) {
+    margin-right: 20px;
+  }
+
+  @include responsive {
+    margin-bottom: 30px;
+
+    &:not(:last-of-type) {
+      margin-right: unset;
+    }
+  }
+  
+  @include phone {
+    padding: 35px 51px 51px 56px;
+  }
+
+  @include IE-breakpoint {
+    opacity: 1;
+  }
+}
+
+.features__box-icon {
+  font-size: 50px;
+  margin-bottom: 22px;
+
+  @include phone {
+    font-size: 40px;
+  }
+}
+
+.features__box-heading {
+  font-family: $main-font;
+  font-weight: $fntweight-medium;
+  font-size: 22px;
+  line-height: 32px;
+  color: $white;
+  margin-bottom: 17px;
+
+  @include phone {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
