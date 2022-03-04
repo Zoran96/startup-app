@@ -2,6 +2,8 @@
 
 // ***** IMPORTANT ***** //
 
+// It's already compiled, the files are in dist folder.
+
 I used handlebars starter from "https://github.com/maksabuzyarov/gulp-webpack-handlebars".
 
 I have designed the website from figma project.
@@ -12,8 +14,9 @@ Since this project has multiple modules, I used them randomly.
 
 Links inside submenu content are not filled, they don't have directory, they are working, but I just simply didn't fill them with links because of the figma design, there is no module for them.
 
-// ***** HOW TO RUN ***** //
+// ***** IF YOU WANT TO COMPILE YOURSELF ***** //
 
+1. Delete dist folder.
 1. Enter the directory with cmd.
 2. Run "npm install" to install node modules.
 3. Run "npm run build" to compile production build.
